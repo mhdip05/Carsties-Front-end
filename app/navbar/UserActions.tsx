@@ -19,29 +19,25 @@ export async function UserActions({ user }: Props) {
         <Dropdown.Item icon={HiUser}>
           <Link href="/">My Auctions</Link>
         </Dropdown.Item>
-        <Dropdown.Item>
-          <Dropdown.Item icon={AiFillTrophy}>
-            <Link href="/">Auctions Won</Link>
-          </Dropdown.Item>
+
+        <Dropdown.Item icon={AiFillTrophy}>
+          <Link href="/">Auctions Won</Link>
         </Dropdown.Item>
-        <Dropdown.Item>
-          <Dropdown.Item icon={AiFillCar}>
-            <Link href="/">Sell My Card</Link>
-          </Dropdown.Item>
+
+        <Dropdown.Item icon={AiFillCar}>
+          <Link href="/">Sell My Card</Link>
         </Dropdown.Item>
-        <Dropdown.Item>
-          <Dropdown.Item icon={HiCog}>
-            <Link href="/session">Session (dev only)</Link>
-          </Dropdown.Item>
+
+        <Dropdown.Item icon={HiCog}>
+          <Link href="/session">Session (dev only)</Link>
         </Dropdown.Item>
+
         <Dropdown.Divider />
-        <Dropdown.Item>
-          <Dropdown.Item
-            icon={AiOutlineLogout}
-            onClick={() => signOut({ callbackUrl: "/" })}
-          >
-            Sing out
-          </Dropdown.Item>
+        <Dropdown.Item
+          icon={AiOutlineLogout}
+          onClick={() => signOut({ callbackUrl: "/" })}
+        >
+          Sing out
         </Dropdown.Item>
       </Dropdown>
 
